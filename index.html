@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+  rel="stylesheet"
+/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Professional Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="over" id="home">
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">Hey It's Me !!</div>
+    <button class="hamburger" aria-label="Toggle menu">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><button class="btn-modal">More</button></li>
+    </ul>
+  </nav>
+
+  <!-- Modal -->
+  <div class="modal-overlay" id="modal">
+    <div class="modal-content">
+      <button class="close-modal" aria-label="Close modal">&times;</button>
+      <h2>More About Raj</h2>
+      <p>
+        Thank you for visiting my portfolio! I am a passionate full-stack developer 
+        specializing in creating dynamic and responsive web applications.
+      </p>
+      <p>Feel free to explore my projects and reach out for collaborations!</p>
+    </div>
+  </div>
+  <section class="hero">
+  <div class="hero-content">
+    <div class="hero-text">
+      <h1>Hi, I'm Raj</h1>
+      <p>
+        I'm a Full-Stack Developer specializing in building scalable ecommerce-websites, web applications
+        cloud integrations, and AI-driven solutions.
+      </p>
+      <a href="#projects" class="btn">View My Work</a>
+      <div class="tech-icons">
+        <i class="fab fa-react" title="React"></i>
+        <i class="fab fa-node-js" title="Node.js"></i>
+        <i class="fab fa-python" title="Python"></i>
+        <i class="fab fa-aws" title="AWS"></i>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="me.jpeg" alt="Raj's Photo" />
+    </div>
+  </div>
+</section>
+
+<!-- Add this line in your <head> to load FontAwesome icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+<section id="projects" class="projects-section">
+  <h2 class="section-title">My Work</h2>
+  
+  <div class="projects-grid">
+    <!-- Project 1: Frontend -->
+    <div class="project-card">
+      <h3>Portfolio Website</h3>
+      <p>A responsive personal portfolio website showcasing my skills and projects.</p>
+      <p><strong>Tech Stack:</strong> HTML, CSS, JavaScript</p>
+      <ul class="features">
+        <li>Responsive design for all devices</li>
+        <li>Animated sections & smooth scrolling</li>
+      </ul>
+      <div class="project-links">
+        <a href="https://github.com/rajsingh01-coder/rajsingh01-coder" target="_blank" rel="noopener">Live Demo</a>
+        <a href="https://github.com/rajsingh01-coder/rajsingh01-coder" target="_blank" rel="noopener">Source Code</a>
+      </div>
+    </div>
+
+    <!-- Project 2: Full-stack -->
+    <div class="project-card">
+      <h3>E-commerce App</h3>
+      <p>A full-stack web app for buying and selling products with user authentication and payment integration.</p>
+      <p><strong>Tech Stack:</strong> React, Node.js, Express, MongoDB, Stripe</p>
+      <ul class="features">
+        <li>User login & registration</li>
+        <li>Real-time payment processing</li>
+        <li>Product search & filters</li>
+      </ul>
+      <div class="project-links">
+        <a href="https://github.com/rajsingh01-coder/rajsingh01-coder" target="_blank" rel="noopener">Live Demo</a>
+        <a href="https://github.com/rajsingh01-coder/rajsingh01-coder" target="_blank" rel="noopener">Source Code</a>
+      </div>
+    </div>
+
+    <!-- Project 3: Advanced (AI/Cloud) -->
+    <div class="project-card">
+      <h3>E-commerce Websites</h3>
+      <p>A full-stack websites for buying and selling products with user authentication and payment integration.</p>
+      <p><strong>Tech Stack:</strong> Html, Css, JavaScript, Python MongoDB</p>
+      <ul class="features">
+        <li>Natural language processing</li>
+        <li>Serverless backend </li>
+        <li>Real-time E-commerce Website interface</li>
+      </ul>
+      <div class="project-links">
+        <a href="https://github.com/rajsingh01-coder/rajsingh01-coder" target="_blank" rel="noopener">Live Demo</a>
+        <a href="https://github.com/rajsingh01-coder/rajsingh01-coder" target="_blank" rel="noopener">Source Code</a>
+      </div>
+    </div>
+
+    <section id="about" class="about-section">
+  <h2>About Me</h2>
+  <p>
+    I’m a passionate full-stack developer dedicated to building efficient, scalable, and user-friendly and ecommerce-websites and applications,
+    With expertise in cloud computing and AI, I thrive on solving complex problems and continuously evolving my skills.
+  </p>
+  <p class="extra-text">
+    Over the past 1 years, I have contributed to diverse projects, earning certifications and delivering impactful tech solutions.
+    Collaboration and innovation drive me to create meaningful experiences through code.
+  </p>
+  <button id="toggleBtn" class="btn-toggle">Read More</button>
+</section>
+
+
+
+
+
+
+
+</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills Section</title>
+    <style>
+        :root {
+            --primary-color: #3498db;
+            --secondary-color: #2ecc71;
+            --dark-color: #2c3e50;
+            --light-color: #ecf0f1;
+            --accent-color: #e74c3c;
+        }
+        
+        * {
+            box-sizing: border-box;
+        }
+        
+        html, body {
+           
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color:linear-gradient(135deg, #4e54c8, #8f94fb);
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            overflow-x: hidden;
+        }
+        
+        .skills-container {
+            background-color: linear-gradient(135deg, #4e54c8, #8f94fb);
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+        margin-top: 5rem;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        
+        .section-title {
+            font-size: 2.2rem;
+            margin-bottom: 20px;
+            color: var(--dark-color);
+            text-align: center;
+            position: relative;
+        }
+        
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 4px;
+            background: var(--primary-color);
+            margin: 10px auto 30px;
+            border-radius: 2px;
+        }
+        
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 20px;
+            width: 100%;
+            max-width: 1800px;
+            margin: 0 auto;
+        }
+        
+        .skill-category {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .skill-category:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+        
+        .category-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        
+        .category-icon {
+            font-size: 28px;
+            margin-right: 15px;
+            color: var(--primary-color);
+        }
+        
+        .category-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--dark-color);
+            margin: 0;
+        }
+        
+        .skill-item {
+            margin-bottom: 16px;
+        }
+        
+        .skill-info {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 8px;
+        }
+        
+        .skill-name {
+            font-weight: 500;
+            color: var(--dark-color);
+        }
+        
+        .skill-level {
+            color: var(--primary-color);
+            font-weight: 500;
+        }
+        
+        .progress-bar {
+            height: 10px;
+            background-color: #e0e0e0;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        
+        .progress-fill {
+            height: 100%;
+            border-radius: 5px;
+            transition: width 1.5s ease-in-out;
+            width: 0;
+        }
+        
+        .badges-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 10px;
+        }
+        
+        .skill-badge {
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            color: white;
+            background-color: var(--primary-color);
+        }
+        
+        /* Category-specific colors */
+        .frontend .category-icon,
+        .frontend .skill-level {
+            color: #3498db;
+        }
+        
+        .frontend .progress-fill {
+            background-color: #3498db;
+        }
+        
+        .frontend .skill-badge {
+            background-color: #3498db;
+        }
+        
+        .backend .category-icon,
+        .backend .skill-level {
+            color: #2ecc71;
+        }
+        
+        .backend .progress-fill {
+            background-color: #2ecc71;
+        }
+        
+        .backend .skill-badge {
+            background-color: #2ecc71;
+        }
+        
+        .database .category-icon,
+        .database .skill-level {
+            color: #9b59b6;
+        }
+        
+        .database .progress-fill {
+            background-color: #9b59b6;
+        }
+        
+        .database .skill-badge {
+            background-color: #9b59b6;
+        }
+       
+        
+        .tools .category-icon,
+        .tools .skill-level {
+            color: #f39c12;
+        }
+        
+        .tools .progress-fill {
+            background-color: #f39c12;
+        }
+        
+        .tools .skill-badge {
+            background-color: #f39c12;
+        }
+
+        /* Animation for skills when they come into view */
+        .animated {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        
+        .animated.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    
+        /* Media Queries for Smartphones */
+        @media screen and (max-width: 767px) {
+            body {
+                padding: 10px;
+            }
+            
+            .skills-container {
+                padding: 15px;
+            }
+            
+            .section-title {
+                font-size: 1.8rem;
+                margin-bottom: 15px;
+            }
+            
+            .section-title::after {
+                width: 60px;
+                margin: 8px auto 20px;
+            }
+            
+            .skills-grid {
+                grid-template-columns: 1fr;
+                gap: 15px;
+            }
+            
+            .skill-category {
+                padding: 15px;
+            }
+            
+            .category-header {
+                margin-bottom: 15px;
+            }
+            
+            .category-icon {
+                font-size: 24px;
+                margin-right: 10px;
+            }
+            
+            .category-title {
+                font-size: 1.3rem;
+            }
+            
+            .skill-item {
+                margin-bottom: 12px;
+            }
+            
+            .badges-container {
+                gap: 6px;
+                margin-top: 8px;
+            }
+            
+            .skill-badge {
+                padding: 4px 10px;
+                font-size: 0.8rem;
+            }
+        }
+        
+        /* Media Queries for Extra Small Devices */
+        @media screen and (max-width: 380px) {
+            .section-title {
+                font-size: 1.6rem;
+            }
+            
+            .category-icon {
+                font-size: 20px;
+            }
+            
+            .category-title {
+                font-size: 1.2rem;
+            }
+            
+            .skill-badge {
+                padding: 3px 8px;
+                font-size: 0.75rem;
+            }
+            
+            .skill-info {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 2px;
+            }
+            
+            .skill-level {
+                font-size: 0.85rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="skills-container">
+        <h2 class="section-title">Professional Skills</h2>
+        
+        <div class="skills-grid">
+            <!-- Frontend Skills -->
+            <div class="skill-category frontend animated">
+                <div class="category-header">
+                    <div class="category-icon">💻</div>
+                    <h3 class="category-title">Frontend</h3>
+                </div>
+                <div class="skills-list">
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">HTML5</span>
+                            <span class="skill-level">Expert</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-width="95%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">CSS3</span>
+                            <span class="skill-level">Advanced</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-width="90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">JavaScript</span>
+                            <span class="skill-level">Advanced</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-width="85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">React</span>
+                            <span class="skill-level">Intermediate</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-width="60%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="badges-container">
+                    <span class="skill-badge">HTML5</span>
+                    <span class="skill-badge">CSS3</span>
+                    <span class="skill-badge">JavaScript</span>
+                    <span class="skill-badge">React</span>
+                    <span class="skill-badge">SASS</span>
+                    <span class="skill-badge">Bootstrap</span>
+                    <span class="skill-badge">Tailwind</span>
+                </div>
+            </div>
+            
+            <!-- Backend Skills -->
+            <div class="skill-category backend animated">
+                <div class="category-header">
+                    <div class="category-icon">🔧</div>
+                    <h3 class="category-title">Backend</h3>
+                </div>
+                <div class="skills-list">
+                    <div class="skill-item">
+    
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-width="85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">Python</span>
+                            <span class="skill-level">Intermediate</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-width="75%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">Django</span>
+                            <span class="skill-level">Intermediate</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-width="70%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">RESTful APIs</span>
+                            <span class="skill-level">Intermediate</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-width="60%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="badges-container">
+                    <span class="skill-badge">Node.js</span>
+                    <span class="skill-badge">Python</span>
+                    <span class="skill-badge">Django</span>
+                    <span class="skill-badge">Express</span>
+                    <span class="skill-badge">RESTful APIs</span>
+                </div>
+            </div>
+            
+            <!-- Database Skills -->
+            <div class="skill-category database animated">
+                <div class="category-header">
+                    <div class="category-icon">🗄️</div>
+                    <h3 class="category-title">Database</h3>
+                </div>
+                <div class="skills-list">
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">MySQL</span>
+                            <span class="skill-level">Advanced</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-width="85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">MongoDB</span>
+                            <span class="skill-level">Intermediate</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-width="75%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">PostgreSQL</span>
+                            <span class="skill-level">Intermediate</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-width="70%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="badges-container">
+                    <span class="skill-badge">MySQL</span>
+                    <span class="skill-badge">MongoDB</span>
+                    <span class="skill-badge">PostgreSQL</span>
+                    <span class="skill-badge">SQLite</span>
+                    <span class="skill-badge">Redis</span>
+                </div>
+            </div>
+            
+       
+            
+            <!-- Tools Skills -->
+            <div class="skill-category tools animated">
+                <div class="category-header">
+                    <div class="category-icon">🔨</div>
+                    <h3 class="category-title">Tools</h3>
+                </div>
+                <div class="skills-list">
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">Git</span>
+                            <span class="skill-level">Expert</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-width="90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">Postman</span>
+                            <span class="skill-level">Advanced</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-width="85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">VS Code</span>
+                            <span class="skill-level">Expert</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-width="95%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="badges-container">
+                    <span class="skill-badge">Git</span>
+                    <span class="skill-badge">GitHub</span>
+                    <span class="skill-badge">Postman</span>
+                    <span class="skill-badge">VS Code</span>
+                    <span class="skill-badge">Webpack</span>
+                    <span class="skill-badge">npm</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>Experience</h2>
+        <p class="beginner-note">(Beginner)</p>
+        
+        <div class="toggle-container">
+            <label class="toggle-label">
+                <span class="toggle-text">I'm a beginner</span>
+                <span class="toggle-switch">
+                    <input type="checkbox" id="experience-toggle" checked>
+                    <span class="slider"></span>
+                </span>
+            </label>
+        </div>
+        
+        <div id="no-experience" class="no-experience">
+            I’m Raj, a passionate full-stack developer eager to help bring your ideas to life. I specialize in creating user-friendly websites and dynamic web applications. Although I’m at the beginning of my journey, I’ve already mastered frontend development and am diving deep into backend technologies to deliver full-stack solutions.
+        </div>
+        
+        <div id="experience-section" class="experience-section">
+            <ul class="project-list">
+                <li class="project-item">
+                    <div class="project-title">Web Developer</div>
+                    <div class="project-company">Freelance Project</div>
+                    <div class="project-description">
+                        <ul>
+                            <li>Designed and developed a responsive website using HTML, CSS, and JavaScript</li>
+                            <li>Implemented an e-commerce functionality with shopping cart and checkout process</li>
+                            <li>Optimized site performance increasing page load speed by 40%</li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="project-item">
+                    <div class="project-title">UI Designer</div>
+                    <div class="project-company">Startup - Part-time</div>
+                    <div class="project-description">
+                        <ul>
+                            <li>Created wireframes and prototypes for mobile application</li>
+                            <li>Collaborated with development team to implement designs</li>
+                            <li>I’m committed to delivering high-quality work, meeting deadlines, and collaborating closely to achieve your vision.</li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="project-item">
+                    <div class="project-title">Content Writer</div>
+                    <div class="project-company">BlogTech - Freelance</div>
+                    <div class="project-description">
+                        <ul>
+                            <li>Wrote technical articles on web development topics</li>
+                            <li>Created SEO-optimized content that increased organic traffic</li>
+                            <li> Let’s work together to create something amazing!</li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+
+    <section id="testimonials" class="testimonials-section">
+  <h2>What People Say</h2>
+  
+  <div class="testimonials-container">
+    <div class="testimonial">
+      <img src="naveen.avif" alt="Client Photo" class="testimonial-photo" />
+      <p class="testimonial-text">
+        "Working with Raj has been a phenomenal experience. His dedication, problem-solving skills, and expertise in full-stack development are unmatched."
+      </p>
+      <h3 class="testimonial-name">Naveen Jaiswal</h3>
+      <p class="testimonial-role">CEO, NT</p>
+    </div>
+
+    <div class="testimonial">
+      <img src="Rajesh K., India.avif" alt="Client Photo" class="testimonial-photo" />
+      <p class="testimonial-text">
+        "Raj is an exceptional developer with a passion for creating scalable solutions. I highly recommend him for any tech project!"
+      </p>
+      <h3 class="testimonial-name">Aditya Dubey</h3>
+      <p class="testimonial-role">CA, Alpha Group</p>
+    </div>
+
+    <div class="testimonial">
+      <img src="Anu.jpeg" alt="Client Photo" class="testimonial-photo" />
+      <p class="testimonial-text">
+        "His ability to simplify complex problems and deliver quality code is inspiring. Raj is a true asset to any team."
+      </p>
+      <h3 class="testimonial-name">Anu </h3>
+      <p class="testimonial-role">Teammate, DevOps </p>
+    </div>
+  </div>
+</section>
+
+  <div class="container1" role="main">
+    <h2>Contact Me</h2>
+    <form id="contactForm" novalidate>
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" placeholder="Your full name" required aria-required="true" />
+      
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="Your email address" required aria-required="true" />
+      
+      <label for="message">Message</label>
+      <textarea id="message" name="message" placeholder="Write your message here..." required aria-required="true"></textarea>
+      
+      <button type="submit" aria-label="Submit contact form">Send Message</button>
+    </form>
+  </div>
+
+  <div class="popup-overlay" id="popup">
+    <div class="popup-content" role="alertdialog" aria-modal="true" aria-labelledby="popupTitle" tabindex="-1">
+      <h3 id="popupTitle">Thank you!</h3>
+      <p>Your message has been sent successfully.</p>
+      <button id="closePopupBtn" aria-label="Close popup">Close</button>
+    </div>
+  </div>
+
+  <footer class="footer">
+  <div class="footer-container">
+    <!-- About Us Section -->
+    <div class="footer-section about">
+      <h4>About Us</h4>
+      <p>We are dedicated to providing the best services and creating great value for our customers. Your satisfaction is our priority.</p>
+    </div>
+    
+    <!-- Quick Links Section -->
+    <div class="footer-section links">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+    </div>
+    
+    <!-- Contact Section -->
+    <div class="footer-section contact" id="contact">
+      <h4>Contact</h4>
+      <p><i class="icon-location"></i> 123 Street, City, Country</p>
+      <p><i class="icon-phone"></i> +123 456 7890</p>
+      <p><i class="icon-envelope"></i> info@example.com</p>
+    </div>
+    
+    <!-- Newsletter Section -->
+    <div class="footer-section newsletter">
+      <h4>Newsletter</h4>
+      <p>Subscribe to receive our latest updates and offers.</p>
+      <form id="newsletterForm">
+        <input type="email" placeholder="Enter your email" required>
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+  </div>
+<div class="footer-bottom">
+  <p>&copy; 2025 YourCompany. All rights reserved.</p>
+  <div class="social-icons">
+    <a href="https://www.facebook.com/profile.php?id=100093099705243" target="_blank"><i class="fab fa-facebook"></i></a>
+    <a href="https://x.com/RajSing66138630?s=08" target="_blank"><i class="fab fa-twitter"></i></a>
+    <a href="https://www.linkedin.com/in/raj-singh-b37531247?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fab fa-linkedin"></i></a>
+    <a href="https://www.instagram.com/beast_23036/" target="_blank"><i class="fab fa-instagram"></i></a>
+  </div>
+</div>
+
+
+
+  <script src="script.js"></script>
+</body>
+</html>
