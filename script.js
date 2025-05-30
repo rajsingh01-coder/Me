@@ -8,28 +8,6 @@ if (hamburger && navLinks) {
   });
 }
 
-  // WhatsApp functionality
-        document.getElementById('whatsappBtn').addEventListener('click', function(e) {
-            e.preventDefault();
-            
-            // METHOD 1: Using phone number (RECOMMENDED)
-            // Your WhatsApp number: +918789140160
-            // Remove the + sign and use: 918789140160
-            const phoneNumber = '918789140160';
-            
-            // Optional: Pre-filled message
-            const message = 'Hi! I found your portfolio and would like to connect.';
-          
-            // METHOD 2: Using direct WhatsApp link (if you have a custom WhatsApp business link)
-            // Uncomment the line below and replace with your custom link
-            const whatsappURL = 'https://wa.me/qr/https://wa.link/vfbbqc';
-            
-            // METHOD 3: Using WhatsApp Business API link (if you have one)
-            // const whatsappURL = 'https://api.whatsapp.com/send?phone=919876543210&text=' + encodeURIComponent(message);
-            
-            // Open WhatsApp
-            window.open(whatsappURL, '_blank');
-        });
 
         // Add some smooth scrolling and interactions
         document.querySelectorAll('.portfolio-item').forEach(item => {
